@@ -1,0 +1,25 @@
+{
+  "name": "regular-utils",
+  "version": "0.0.0",
+  "description": "regular utils",
+  "main": "dist/regular-utils.js",
+  "scripts": {
+    "dist": "bili ./src/index.js -d dist -n regular-utils --format umd --module-name regularUtils --compress",
+    "dev": "nodemon -x \"npm run dist\" --watch src",
+    "test": "jest --no-cache --coverage"
+  },
+  "repository": {
+    "url": "git@github.com:fengzilong/regular-utils.git",
+    "type": "git"
+  },
+  "author": "mo <feng_zilong@163.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-jest": "^16.0.0",
+    "babel-polyfill": "^6.16.0",
+    "babel-preset-es2015": "^6.18.0",
+    "bili": "^0.6.3",
+    "jest": "^16.0.2",
+    "nodemon": "^1.11.0"
+  }
+}
