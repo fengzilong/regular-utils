@@ -1,7 +1,3 @@
-general:
-  artifacts:
-    - "coverage"
-
 machine:
   node:
     version: 5
