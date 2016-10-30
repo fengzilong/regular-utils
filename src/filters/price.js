@@ -1,8 +1,8 @@
-export default function( value ) {
+export default function ( value ) {
 	return divide( String( value ), 3 ).join( ',' );
 }
 
-function divide ( str, len ) {
+function divide( str, len ) {
 	const result = [];
 
 	str = str.split( '' );
@@ -13,7 +13,7 @@ function divide ( str, len ) {
 	}
 
 	let tmp = str.splice( 0, len );
-	while( tmp.length > 0 ) {
+	while ( tmp.length > 0 ) {
 		result.push( tmp );
 		tmp = str.splice( 0, len );
 	}
