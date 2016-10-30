@@ -3,6 +3,20 @@
 
 > regular utils, containing [regular](https://github.com/regularjs/regular) filters, directives and animations
 
+<details><summary>Table of Contents</summary>
+
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:0 orderedList:0 -->
+
+- [Filters](#filters)
+	- [price](#price)
+	- [timeformat](#timeformat)
+- [Directives](#directives)
+	- [countdown](#countdown)
+
+<!-- /TOC -->
+
+</details>
+
 ## Filters
 
 ### price
