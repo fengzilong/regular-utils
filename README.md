@@ -3,12 +3,26 @@
 
 > regular utils, containing [regular](https://github.com/regularjs/regular) filters, directives and animations
 
-## filters
+## Filters
 
 ### price
 
 ```js
-{ "12345678" | price } // "12,345,678"
+{ "12345678" | price } // '12,345,678'
+```
+
+### timeformat
+
+```js
+{ 1477962600000 | timeformat: 'YYYY-M-D HH:mm:ss' } // '2016-11-1 09:10:00'
+```
+
+## Directives
+
+### countdown
+
+```html
+<div r-countdown="{ endTime }" format="[D]天[H]时[M]分[S]秒[MS]"></div>
 ```
 
 ## License
