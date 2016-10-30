@@ -1,0 +1,27 @@
+<html>
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+	<title>demo</title>
+</head>
+<body>
+	<div id="app"></div>
+	
+	<script type="text/javascript" src="https://unpkg.com/regularjs@0.4.4/dist/regular.js"></script>
+	<script type="text/javascript" src="../dist/regular-utils.js"></script>
+	
+	<script type="text/javascript">
+		Regular.use( regularUtils );
+
+		const Demo = Regular.extend( {
+			template: `
+				<div r-countdown="{ endTime }" format="[D]天 [H]时 [M]分 [S]秒 [MS]"></div>
+			`,
+			config() {
+				this.data.endTime = new Date().getTime() + 1000 * 60 * 10;
+			}
+		} );
+
+		new Demo().$inject( document.getElementById( 'app' ) )
+	</script>
+</body>
+</html>
