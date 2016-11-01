@@ -31,6 +31,8 @@
 { 1477962600000 | timeformat: 'YYYY-M-D HH:mm:ss' } // '2016-11-1 09:10:00'
 ```
 
+See more [supported tokens](https://date-fns.org/docs/format)
+
 ## Directives
 
 ### countdown
