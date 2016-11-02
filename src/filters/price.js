@@ -1,5 +1,9 @@
 export default function ( value ) {
-	return divide( String( value ), 3 ).join( ',' );
+	value = String( value );
+	const [ integer, decimal ] = value.split( '.' );
+
+	return divide( String( integer ), 3 ).join( ',' ) +
+		( decimal ? `.${ decimal }` : '' );
 }
 
 function divide( str, len ) {
