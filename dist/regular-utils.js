@@ -5,7 +5,13 @@
 }(this, (function () { 'use strict';
 
 var price = function ( value ) {
-	return divide( String( value ), 3 ).join( ',' );
+	value = String( value );
+	var ref = value.split( '.' );
+	var integer = ref[0];
+	var decimal = ref[1];
+
+	return divide( String( integer ), 3 ).join( ',' ) +
+		( decimal ? ("." + decimal) : '' );
 };
 
 function divide( str, len ) {
